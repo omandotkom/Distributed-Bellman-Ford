@@ -5,7 +5,6 @@
  */
 
 
-import distribusi.proses.Linker;
 
 /**
  *
