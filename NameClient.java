@@ -17,12 +17,12 @@ public class NameClient {
 
     BufferedReader din;
     PrintStream pout;
-    final String addr = "192.168.100.63"; //address NameServer (Hardcoded!)
-    final int port = 1024;
-//Hardcoded!
+    final String addr = "192.168.100.6"; //address NameServer (Hardcoded!)
+    final int port = 5001;//Hardcoded!
 
     private void getSocket() throws IOException {
         Socket server = new Socket(addr, port);
+        System.out.println("Creating socket to connect to " + addr + " : " +port);
         din = new BufferedReader(
                 new InputStreamReader(server.getInputStream()));
         pout = new PrintStream(server.getOutputStream());
