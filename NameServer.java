@@ -18,7 +18,7 @@ import java.util.*;
 public class NameServer {
 
     NameTable table;
-    static final int port = 1024;
+    static final int port = 1023;
 //konstruktor default memanggil NameTable
 
     public NameServer() {

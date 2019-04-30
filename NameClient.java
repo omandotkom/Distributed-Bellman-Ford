@@ -18,7 +18,7 @@ public class NameClient {
     BufferedReader din;
     PrintStream pout;
     final String addr = "192.168.100.6"; //address NameServer (Hardcoded!)
-    final int port = 5001;//Hardcoded!
+    final int port = 1023;//Hardcoded!
 
     private void getSocket() throws IOException {
         Socket server = new Socket(addr, port);
